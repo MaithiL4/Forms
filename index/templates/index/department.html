@@ -1,0 +1,38 @@
+{% extends 'index/layout.html' %}
+{% load static %}
+{% block script %}
+<script src = "{% static 'index/index.js' %}" defer></script>
+<script src="{% static 'lib/cookie.min.js' %}" defer></script>
+{% endblock %}
+{% load static %}
+{% block body %}
+<div class="container-fluid">
+    <div class="topnav nav-effect">
+        <div class="nav-padding">
+            <span class="nav-ham" id="nav-ham">&#9776;</span>
+            <img src = "{% static 'Icon/icon.png' %}" alt = "Google Forms Icon(CLONE)" class="navbar-icon form-icon" title = "Forms">
+            <span class="nav-text" title = "Forms"><a href = "{% url 'index' %}" class="nav-link">Education & Learning</a></span>
+
+            
+            <span class="nav-text" title = "Forms"><a href = "{% url 'index' %}" class="nav-link">Housing & Shelter</a></span>
+
+            <span class="nav-text" title = "Forms"><a href = "{% url 'index' %}" class="nav-link">Business & Entrepreneurship</a></span>
+
+            <span class="nav-text" title = "Forms"><a href = "{% url 'index' %}" class="nav-link">Banking,Financial Services and Insurance</a></span>
+
+            <span class="nav-text" title = "Forms"><a href = "{% url 'index' %}" class="nav-link">Agriculture,Rural & Environment</a></span>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="topnav nav-effect">
+        <div class="nav-padding">
+            <span class="nav-ham" id="nav-ham">&#9776;</span>
+            <img src = "{% static 'Icon/icon.png' %}" alt = "User Side" class="navbar-icon form-icon" title = "Forms">
+            <span class="nav-text" title = "Forms"><a href = "http://127.0.0.1:8000/form/ZsGtOIX1r6kku9XxQre16WCkRrqkjU/viewform" class="nav-link">User</a></span>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
